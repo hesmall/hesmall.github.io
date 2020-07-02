@@ -1,7 +1,159 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<!-- Tab links -->
+<button id = "tab1" class="tablink" onclick="openPage('HannahSmall', this)" >
+      <span id="typedHannah"></span>
+      <span class="typed-cursor"></span></button>
+<button id = "tab2" class="tablink" onclick="openPage('Science', this)"  >
+      <span id="typedScience"></span> </button>
+
+<button id = "tab3" class="tablink" onclick="openPage('Passions', this)"  >
+      <span id="typedPassions"></span></button>
+
+<button id = "tab4" class="tablink" onclick="openPage('Contact', this)"  >
+      <span id="typedContact"></span></button>
+
+
+<div id="HannahSmall" class="tabcontent">
+  <h3> <img src="assets/headshot.jpg" alt="Hannah Small, July 2019" id = "headshot" style="width:30%;">
+    Hi, I'm Hannah.</h3
+  <p class = "snippet" >
+    I am an aspiring computational cognitive neuroscientist with a passion for understanding our ancient social brain.  I am currently working in Ev Fedorenko's lab at MIT researching how the brain communicates meaning.
+  </p>
+  <div class="popup" onclick="showPopUp()"><i class="fas fa-brain"></i>
+    <span class = "popupgif" id="myPopup">
+      <video autoplay loop muted playsinline id="headshot" style="width:115%;">
+      <source src="assets/brain.mp4" type="video/mp4" >
+      </video>
+      <video autoplay loop muted playsinline id="headshot" style="width:115%;">
+      <source src="assets/brain.mp4" type="video/mp4" >
+      </video>
+      <video autoplay loop muted playsinline id="headshot" style="width:115%;">
+      <source src="assets/brain.mp4" type="video/mp4" >
+      </video>
+      </span>
+  </div>
+
+  <i class="fas fa-heart"></i>
+  <a href="assets/Resume.pdf" target = "_blank">Resume</a>
+  <a href="assets/CV.pdf" target="_blank">CV</a>
+
+</div>
+
+<div id="Science" class="tabcontent">
+  <h3>Science</h3>
+            <button class="accordion"> > Current Work: Learning how minds and brains process language</button>
+            <div class="panel">
+              <button class = "sub-accordion"> >> How does the brain process language? </button>
+              <div class ="panel-text">
+                We use precious human intracranial electrocorticography (ECoG) data to probe the complexities of the human language ability. Through carefully designing experiments,
+                  constructing stimuli, and extracting the neural populations' responses to the stimuli, we are working to uncover the computations that underly
+                  linguistic ability, including elucidating the boundaries between meaning and structure in language. The fine spatial and temporal resolution of ECoG data allows us to address fundamental questions about
+                  the mechanisms of language processing in the human brain. We are also exploiting the success of machine learning (artificial neural networks) in predicting neural responses to distinguish between different models of language processing using ECog experiments.
+                  I have been involved in every stage of this research, from creating stimuli and experimental
+                  scripts to processing and analyzing the data. Working with this highly valuable data is one of the most exciting parts of my job.
+
+              </div>
+              <button class = "sub-accordion"> >> How does the brain produce language? </button>
+              <div class ="panel-text">
+                A lot of work has been done on comprehension of language, but less has been done on production-- it's harder to do controlled research
+                  on production. We used fMRI to ...
+              </div>
+              <button class ="sub-accordion"> >> Roles of functional networks in recovery from aphasia </button>
+              <div class = "panel-text">
+                Discovering how the brain reorganizes after a stroke
+              </div>
+            </div>
+
+            <button class="accordion"> > Past Work: ion channel electrophysiology and microbiome simulation</button>
+            <div class="panel">
+              <button class="sub-accordion"> >> Developing a reduced action potential model and applying it to mechanistic understanding of the ketogenic diet </button>
+              <div class="panel-text">
+              My thesis project in Dr. Boland’s lab focused on understanding the ketogenic diet, a diet prescribed to children with severe epilepsy. The high-fat, low-carbohydrate diet has kept many of these patients seizure-free as long as they devote the necessary time and care to administer the specific nutrient ratios. While the ketogenic diet has reduced seizures, the mechanism of action remains a mystery. Since children who have not responded to any medications may respond to the ketogenic diet, the high fat diet may stop seizures by mechanisms different from known drugs. Establishing the mechanism of action for the anticonvulsant action of the ketogenic diet could provide insight into a new pathway for drug development that may allow treatment with better compliance and fewer side effects. My research established a model that can be used to study this phenomenon. This model involved using oocytes as excitable cells.
+
+              Typically, neurons and muscle cells are the only cells viewed as excitable, but the use of oocytes as electrically excitable cells could lead to better studies of specific channels involved in nervous system excitability. By expressing both sodium and potassium voltage gated channels in a Xenopus oocyte and injecting a small amount of current, an action potential can be evoked. In this project, we used electrophysiology to show that action potentials evoked in Xenopus oocytes have similar characteristics to action potentials observed in the natural world. Our goal was to demonstrate that these oocytes are electrically excitable cells and to determine the characteristics of action potentials evoked in an oocyte, including the conditions under which an action potential is evoked, the absolute and relative refractory periods, and the excitation of multiple action potentials. These electrically excitable oocytes could be used as a model to study action potential waveforms and excitability with great control over the ion channels participating.
+
+              The action potentials generated in the excitable oocytes demonstrated the rising phase, peak, repolarization, and hyperpolarization indicating the asynchronous activation and inactivation of the sodium and potassium channels characteristic of a neuron. The action potentials also displayed the variation in their refractory periods typically seen in native neurons.
+
+              I worked on defining techniques to consistently obtain oocytes capable of action potential excitation, figuring out the best methods for exciting action potentials, and measuring the amount of sodium and potassium current that the channels in the cell were conducting. I developed the protocols to study and quantify the absolute and refractory periods in the injected oocytes. I also experimented with different ways of displaying the data from action potentials using phase plots. We concluded that these cells were excitable and could be used a model for action potentials.
+
+            </div>
+
+            <button class="sub-accordion"> >> Simulating the microbiome: Integrating science from freshman to senior year </button>
+            <div class="panel-text">
+              From my very first semester of college, I immersed myself in an integrated perspective of science, diving into a challenging course that taught physics,
+              mathematics, biology, chemistry, and computer science as tools to be used together to explain our world. That synergistic framing has inspired the
+              rest of my research career. As my final project in that class, I developed a proposal to use a mathematical framework in the form of agent-based modeling to
+              predict the efficacy of different microbial treatments of depression.
+              Little did I know at that time, but that exposure to the tools that computer science offers
+              would lead to me taking more and more computer science classes, eventually picking up a CS minor and putting action behind that proposal from freshman year.
+              In my final semester of college, I took a simulations class where I pursued an independent project implementing a verion of my own proposal from 3 years prior.
+              My final project used agent-based modeling to simulate gut bacterial metabolism of tryptophan and its effect on the production of neurotransmitters involved in
+              depression. This project required much more extensive research into the current literature, which I found exhilarating, especially when I integrated past research
+              into my model and saw my first simulation results. This highly rewarding experience further inspired my interest in computational neuroscience.
+
+            </div>
+          </div>
+        </div>
+
+<div id="Passions" class="tabcontent">
+  <h3>Passions</h3>
+  <p>Here is what I'm passionate about! </p>
+          <button class="accordion"> ~ Creating: A potter in training </button>
+          <div class="panel-text">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion"> ~ Exploring: Languages, ideas, and cultures </button>
+          <div class="panel-text">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion"> ~ Giving: Finding a home at Camp Kesem University of Richmond</button>
+          <div class="panel-text">
+            <p>Lorem ipsum...</p>
+          </div>
+</div>
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Send me an email!</p>
+  <p>han.eliz.small[at]gmail[dot]com ~or~ hsmall[at]mit[dot]com </p>
+
+</div>
+
+<div class="footer text-center" style="color:white">
+            © 2020 Hannah E. Small. All rights reserved.
+</div>
+
+
+
+
+<script src= "tabs.js" ></script>
+<script src = "accordion.js"></script>
+<script src = "jquery-3.4.1.js"></script>
+<script src = "typed.js"></script>
+<script src = "typed-content.js"></script>
+<script src = "popup.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
 </body>
+
+
 </html>

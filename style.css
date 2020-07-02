@@ -1,0 +1,252 @@
+body {
+  background-color: black;
+  color: black;
+  height:100%;
+
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 4em 10em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+p{
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+h3{
+  font-size: 50px;
+
+}
+
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 60px 30px;
+  height: 50%;
+
+}
+
+.snippet{
+  width: 50em;
+  word-wrap: break-word;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popupgif {
+  visibility: hidden;
+  width: 160px;
+  /*background-color: #555;*/
+  /*color: #fff;*/
+  text-align: bottom;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -800%;
+  left: 700%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popupgif::after {
+  content:none ;
+  position: absolute;
+  /*top: 100%;
+  left: 50%;*/
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.popup:hover{
+  color: #DDA0DD;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+a:link, a:visited {
+  float:right;
+  background-color: #aaaaaa;
+  border: solid;
+  border-color: white;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+
+}
+
+a:hover, a:active {
+  background-color: #8c8c8c;
+}
+
+/* the icons */
+i {
+  font-size: 30px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.sub-accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover{
+  background-color: #eee;
+}
+
+.sub-active, .sub-accordion:hover{
+  background-color: #DDA0DD;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #eee;
+  font-size: 10px;
+  display: none;
+  overflow: auto;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel-text {
+  padding: 0 18px;
+  background-color: white;
+  font-size: 17px;
+  display: none;
+  overflow: auto;
+}
+
+.sub-accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #DDA0DD;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.typed-cursor{
+  opacity: 0;
+  animation: blink 1s 1;
+}
+
+@keyframes blink{
+  0% {opacity: 0}
+  50% {opacity: 1}
+  100% {opacity:0}
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#headshot
+{border-radius: 50%;
+  float: right;
+  padding: 0% 15%;}
+
+#HannahSmall {background-color: white;}
+#Science {background-color: white;}
+#Passions {background-color: white;}
+#Contact {background-color: white;}
