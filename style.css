@@ -1,3 +1,4 @@
+
 body {
   background-color: black;
   color: black;
@@ -125,6 +126,11 @@ a:link, a:visited {
 
 }
 
+blm {
+  float:right;
+  font-size:17px;
+}
+
 a:hover, a:active {
   background-color: #8c8c8c;
 }
@@ -133,6 +139,19 @@ a:hover, a:active {
 i {
   font-size: 30px;
 }
+i2 {
+  font-size:15px;
+}
+i:hover, i2:hover, blm:hover{
+  color: #DDA0DD
+}
+
+float_mid {
+  float:;
+}
+
+
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
