@@ -126,9 +126,39 @@ a:link, a:visited {
 
 }
 
+a.icon:link, a.icon:visited {
+  float:left;
+  background-color: white;
+  border: solid;
+  border-color: white;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+
+}
+
+a.passion_icon:link, a.passion_icon:visited {
+  float:left;
+  background-color: white;
+  border: solid;
+  border-color: white;
+  color: black;
+  padding: 45px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+}
+
 blm {
   float:right;
   font-size:17px;
+}
+
+atlas_link {
+  float:left;
+  font-size:20px;
 }
 
 a:hover, a:active {
@@ -137,18 +167,15 @@ a:hover, a:active {
 
 /* the icons */
 i {
-  font-size: 30px;
+  /*font-size: 30px;*/
 }
 i2 {
   font-size:15px;
 }
-i:hover, i2:hover, blm:hover{
+blm:hover, atlas_link:hover, a.icon:hover, a.passion_icon:hover{
   color: #DDA0DD
 }
 
-float_mid {
-  float:;
-}
 
 
 
