@@ -10,7 +10,7 @@ body {
 body, html {
   height: 100%;
   margin: 0;
-  padding: 4em 10em;
+  padding: 3%;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -22,7 +22,6 @@ p{
 
 h3{
   font-size: 50px;
-
 }
 
 /* Style tab links */
@@ -47,12 +46,12 @@ h3{
   color: black;
   display: none;
   padding: 60px 30px;
-  height: 50%;
+  height: 60%;
+  overflow:scroll;
 
 }
 
 .snippet{
-  width: 50em;
   word-wrap: break-word;
 }
 
@@ -69,14 +68,14 @@ h3{
   width: 160px;
   /*background-color: #555;*/
   /*color: #fff;*/
-  text-align: bottom;
-  border-radius: 6px;
+  /*text-align: bottom;*/
+  border-radius: 6%;
   padding: 8px 0;
   position: absolute;
   z-index: 1;
-  bottom: -800%;
-  left: 700%;
-  margin-left: -80px;
+  top: -300%;
+  left: 500%;
+  /*margin-left: -80px;*/
 }
 
 /* Popup arrow */
@@ -114,12 +113,12 @@ h3{
 }
 
 a:link, a:visited {
-  float:right;
+  float:none;
   background-color: #aaaaaa;
   border: solid;
   border-color: white;
   color: black;
-  padding: 14px 25px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-table;
@@ -150,20 +149,24 @@ a.passion_icon:link, a.passion_icon:visited {
   text-decoration: none;
   display: inline-table;
 }
+a:hover, a:active {
+  background-color: #8c8c8c;
+}
+a.text:link, a.text:visited {
+  font-size:14px;
+  float:none;
+  background-color: white;
+  border-color:white;
+  padding: 0px 0px;
+  text-align: center;
+  display: inline-table;
+}
 
 blm {
   float:right;
   font-size:17px;
 }
 
-atlas_link {
-  float:left;
-  font-size:20px;
-}
-
-a:hover, a:active {
-  background-color: #8c8c8c;
-}
 
 /* the icons */
 i {
@@ -172,7 +175,7 @@ i {
 i2 {
   font-size:15px;
 }
-blm:hover, atlas_link:hover, a.icon:hover, a.passion_icon:hover{
+blm:hover, atlas_link:hover, a.icon:hover, a.passion_icon:hover, a.text:hover{
   color: #DDA0DD
 }
 
