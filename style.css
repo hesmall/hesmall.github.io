@@ -24,6 +24,10 @@ h3{
   font-size: 50px;
 }
 
+h2 {
+  font-size:25px;
+}
+
 /* Style tab links */
 .tablink {
   background-color: black;
@@ -153,7 +157,7 @@ a:hover, a:active {
   background-color: #8c8c8c;
 }
 a.text:link, a.text:visited {
-  font-size:14px;
+  /*font-size:14px;*/
   float:none;
   background-color: white;
   border-color:white;
@@ -239,6 +243,16 @@ blm:hover, atlas_link:hover, a.icon:hover, a.passion_icon:hover, a.text:hover{
   font-size: 17px;
   display: none;
   overflow: auto;
+}
+
+.primary-panel-text {
+  padding: 0 18px;
+  background-color: white;
+  font-size: 17px;
+  display: none;
+  overflow: auto;
+  visibility: visible;
+  display:block;
 }
 
 .sub-accordion:after {
