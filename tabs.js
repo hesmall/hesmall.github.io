@@ -30,3 +30,21 @@ function openPage(pageName, elmnt, color, txtColor) {
 
 // Get the element with id="defaultOpen" and click on it by default
 document.getElementById("tab1").click();
+
+function bloob() {
+  background_im = "url(\"assets/blueberries.jpg\")"
+  imgs = document.getElementsByTagName("img");
+  backgroundImage = document.body.style.backgroundImage;
+  if (backgroundImage == background_im) {
+    document.body.style.backgroundImage = "none";
+    for (var i = 0; i < imgs.length; i++) {
+      imgs[i].style.filter = "grayscale(100%)";
+    }
+  }
+  else {
+    document.body.style.backgroundImage = background_im;
+    for (var i = 0; i < imgs.length; i++) {
+      imgs[i].style.filter = "none";
+    }
+  }
+}
