@@ -14,8 +14,8 @@ $(function () {
         strings: ["^700 Science"],
         typeSpeed: 30
     });
-    $("#typedPassions").typed({
-        strings: ["^1400 Passions"],
+    $("#typedMisc").typed({
+        strings: ["^1400 Misc"],
         typeSpeed: 30
     });
     $("#typedContact").typed({
