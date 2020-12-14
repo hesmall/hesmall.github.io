@@ -142,7 +142,7 @@ a.icon:link, a.icon:visited {
 
 }
 
-a.passion_icon:link, a.passion_icon:visited {
+a.misc_icon:link, a.misc_icon:visited {
   float:left;
   background-color: white;
   border: solid;
@@ -179,7 +179,7 @@ i {
 i2 {
   font-size:15px;
 }
-blm:hover, atlas_link:hover, a.icon:hover, a.passion_icon:hover, a.text:hover{
+blm:hover, atlas_link:hover, a.icon:hover, a.misc_icon:hover, a.text:hover{
   color: #DDA0DD
 }
 
