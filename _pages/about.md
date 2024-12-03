@@ -6,12 +6,9 @@ subtitle: PhD student
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: 
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Krieger Hall 119</p>
-    <p>3400 N Charles St</p>
-    <p>Baltimore, MD 21218</p>
+  more_info: 
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
