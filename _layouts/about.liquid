@@ -10,6 +10,15 @@ layout: default
       {% else %}
         {{ site.title }}
       {% endif %}
+      {% if page.cv_pdf %}
+          <a
+            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="float-right"
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
+      {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
@@ -39,19 +48,6 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
-    <div class="post">
-      <header class="post-header">
-          {% if page.cv_pdf %}
-            <a
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="float-right"
-              ><i class="fa-solid fa-file-pdf"></i
-            ></a>
-          {% endif %}
-      </header>
-    </div>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
