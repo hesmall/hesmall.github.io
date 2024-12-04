@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I'm a 4th year computational cognitive science PhD student advised by Leyla Isik at Johns Hopkins University. 
-Broadly, I am interested in how the brain spatially organizes information across the hemispheres and why this neural architecture works. Currently, I use fMRI and deep neural networks to study this in the context of multimodal social processing of naturalistic stimuli. 
+Broadly, I am interested in how the brain spatially organizes information across the hemispheres, why this neural architecture works, and how this can inspire better AI systems. Currently, I use fMRI and deep neural networks to study this in the context of multimodal social processing of naturalistic stimuli. 
 
 I earned my B.S. from University of Richmond where I studied biology and computer science and worked in an ion channel electrophysiology lab. Before graduate school, I worked as a technical associate in Ev Fedorenko's lab at MIT, studying how the brain processes language.
 
