@@ -3,7 +3,6 @@ layout: about
 title: about
 permalink: /
 subtitle: PhD student
-cv_pdf: Small_CV.pdf
 
 profile:
   align: right
