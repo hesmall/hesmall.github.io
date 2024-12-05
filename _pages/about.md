@@ -21,4 +21,6 @@ Broadly, I am interested in how the brain spatially organizes information across
 
 I earned my B.S. from University of Richmond where I studied biology and computer science and worked in an ion channel electrophysiology lab. Before graduate school, I worked as a technical associate in Ev Fedorenko's lab at MIT, studying how the brain processes language.
 
+<a href="/pdf/Small_CV.pdf" style="color: inherit">Here is my CV.</a> [updated Dec 2024]
+
 Outside of research, I like to throw pots, read books, and learn new things.
