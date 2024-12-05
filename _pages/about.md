@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="/pdf/Small_CV.pdf" class="font-weight-bold" style="color: inherit;" class="font-weight-bold">CV</a> [updated Dec 2024]
+subtitle: <a href="/pdf/Small_CV.pdf" class="font-weight-bold">CV [updated Dec 2024]</a> 
 cv_pdf: Small_CV.pdf
 
 profile:
