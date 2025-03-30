@@ -21,4 +21,5 @@ I am interested in how humans process the complex world of social interactions, 
 
 I earned my B.S. from University of Richmond where I studied biology and computer science and investigated how potassium ion channels modulated action potentials. Before graduate school, I worked in Ev Fedorenko's lab at MIT, studying how the brain processes language.
 
-Outside of research, I like to throw pots, read books, and learn new things.
+Outside of research, I like to <a href="https://www.instagram.com/hanniiiceramiii/?hl=en"> throw pots</a>, read books, and learn new things.
+
