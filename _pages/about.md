@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I'm a 5th year computational cognitive science PhD candidate advised by Leyla Isik at Johns Hopkins University. 
-I am interested in how the human mind makes sense of the social world from rapidly changing multimodal input, how the brain organizes the relevant systems, and why this neural architecture works. During my PhD, I have been investigating how the human brain processes simultaneous multimodal (vision+language) signals by combining deep learning and naturalistic fMRI of social processing.
+I am interested in how the human mind makes sense of the social world from rapidly changing multimodal input, how the brain organizes the relevant systems, and why this neural architecture works. During my PhD, I have been investigating how the human brain processes simultaneous multimodal (vision+language) signals by combining deep learning and fMRI responses to naturalistic social stimuli.
 
 I earned my B.S. from University of Richmond where I studied biology and computer science and investigated how potassium ion channels modulated action potentials. Before graduate school, I worked in Ev Fedorenko's lab at MIT, studying how the brain processes language.
 
