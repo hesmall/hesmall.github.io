@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy site
 on:
   push:
@@ -17,27 +16,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Ruby for Jekyll
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3.5'
           bundler-cache: true
 
+      # Python for nbconvert
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
           cache: 'pip'
 
+      # Node for PurgeCSS and other tooling
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
+      # Install JS dependencies (includes postcss, sass, etc.)
       - name: Install JS dependencies
         run: npm ci
 
+      # Install PurgeCSS globally
+      - name: Install PurgeCSS
+        run: npm install -g purgecss
+
+      # Install ImageMagick for al-folio image processing
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      # Dynamically patch config
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -46,15 +58,18 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
 
+      # Jekyll build
       - name: Install and Build
         run: |
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
 
+      # Purge unused CSS
       - name: Purge unused CSS
         run: purgecss -c purgecss.config.js
 
+      # Deploy to GitHub Pages
       - name: Deploy
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
