@@ -7,7 +7,7 @@ cv_pdf: Small_CV.pdf
 
 profile:
   align: right
-  image: headshot_hsmall.JPG
+  image: headshot_hsmall.png
   image_circular: false # crops the image to make it circular
   more_info: 
 
